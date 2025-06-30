@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josh's Task Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <div class="branding">
+    <p class="branding-title">An 8ty 4r product</p>
+  </div>
+
+  <div class="branding-icon-wrap">
+    <img src="assets/task-icon.png" alt="Task Icon" class="branding-icon" />
+  </div>
+
+  <div class="container">
+    <h1>Josh's Task Manager</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Type or speak your task..." />
+
+      <div class="due-date-wrapper">
+        <label for="dueDateInput">Due Date</label>
+        <input type="date" id="dueDateInput" />
+      </div>
+
+      <button id="addBtn">Add</button>
+      <button id="voiceBtn">🎤 Voice</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <audio id="addSound" src="assets/bubble-pop-04-323580.mp3"></audio>
+  <audio id="deleteSound" src="assets/pencil-eraser-107852.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
